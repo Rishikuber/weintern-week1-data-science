@@ -1,0 +1,8 @@
+Issue,Investigation,Decision,Justification
+Missing values,Review missing counts and percentages by column,Pending review of missing-value report,Choose handling based on column meaning and analytical impact
+Exact duplicate rows,Check fully identical rows,Remove confirmed exact duplicates from the working copy,Prevent duplicate records from inflating analysis
+Repeated Order IDs,Inspect records sharing the same Order ID,Retain unless evidence confirms an accidental duplicate,Repeated IDs may represent valid order line items
+Quantity,"Check missing, non-numeric, zero, and negative values",Pending validation results,Invalid quantities affect units sold
+Unit Price,"Check missing, non-numeric, zero, and negative values",Pending validation results,Invalid prices affect revenue
+Order Date,Check missing and unparseable dates,Convert valid dates to datetime; investigate invalid dates,Dates are required for time-based analysis
+Delivery Status and Category,Review distinct text values,Standardize text formatting while preserving meaning,Consistent labels improve analysis
